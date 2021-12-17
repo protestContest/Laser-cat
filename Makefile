@@ -28,6 +28,7 @@
 BOARD_TAG   = nano
 BOARD_SUB   = atmega328
 ARDUINO_DIR = /Applications/Arduino.app/Contents/Java
+ARDUINO_LIBS = Wire Servo SoftwareSerial SparkFun_HM1X_Bluetooth_Arduino_Library
 include ./Arduino.mk
 
 # --- pro mini

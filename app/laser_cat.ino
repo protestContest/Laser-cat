@@ -56,6 +56,8 @@ int pos = 0;
 int corner = 0;
 
 void setup() {
+  Serial.begin(9600);
+
   y_servo.attach(6);  // attaches the y servo on pin 6 to the servo object
   x_servo.attach(9);  // attaches the x servo on pin 9 to the servo object
   pinMode (7, OUTPUT);
@@ -68,6 +70,10 @@ void setup() {
 }
 
 void loop() {
+
+}
+
+void old_loop() {
   // return;
   movement_time = random(10,40);
   random_delay = random(min_freeze, max_freeze);
